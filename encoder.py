@@ -91,12 +91,11 @@ def to_nato(input_text):
             result.append(nato_phonetic[input_text[i]])
             i += 1
         else:
-            result.append(input_text[i])  # Keep punctuation/numbers
+            result.append(input_text[i])
             i += 1
 
     return ' '.join(result)
 
-# Example usage
 user_input = input("Enter text: ")
 translated = to_nato(user_input)
 print("\nNATO translation:")
